@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Your Instagram Post</title>
+    <link rel="stylesheet" href="/css/edit.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Your Instagram Feed Caption</h1>
+        <h2>Post Id : <%= post.Id %></h2>
+        <h2>Username is : <%= post.Username %></h2>
+        <form action="/post/<%= post.Id %>?_method=PATCH" method="POST">
+            <label for="caption">Enter Caption : </label>
+            <textarea name="Caption" id="caption" placeholder="Enter Caption"><%= post.Caption %></textarea>
+            <button type="submit">Update Caption</button>
+        </form>
+    </div>
+    <script src="/js/edit.js"></script>
+</body>
+</html>

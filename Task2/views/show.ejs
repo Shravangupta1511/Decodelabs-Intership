@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed In Detail</title>
+    <link rel="stylesheet" href="/css/show.css">
+</head>
+<body>
+    <h1>Here Your Feed In Detail</h1>
+    <div class="feed">
+        <img src="<%= post.Image %>" class="img">
+        <h2>ID is : <%= post.Id %></h2>
+        <h2>Username is : <%= post.Username %></h2>
+        <h3>Caption is : <%= post.Caption %></h3>
+        <p>Followers are : <%= post.Followers %></p>
+        <p>Followings are : <%= post.Following %></p>
+        <a href="/post" id="back">Back To All Feeds</a>
+    </div>
+    <script src="/js/show.js"></script>
+</body>
+</html>

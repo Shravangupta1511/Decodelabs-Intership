@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Posts</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <h1>Instagram Feeds</h1>
+    <% instaposts.forEach((post)=>{ %>
+        <div class="feeds">
+            <h2>ID : <%= post.Id %></h2>
+            <h2>Username : <%= post.Username %></h2>
+            <img class="img" src="<%= post.Image %>" alt="Virat Image">
+            <h3>Caption : <%= post.Caption %></h3>
+            <p>Followers : <%= post.Followers %></p>
+            <p>Following : <%= post.Following %></p>
+            <a href="http://localhost:5000/post/<%= post.Id %>" class="see">See Feed In Detail</a>
+            <a href="http://localhost:5000/post/<%= post.Id %>/edit" class="update">Update Your Feed</a>
+            <form method="POST" action="/post/<%= post.Id %>?_method=DELETE">
+                <Button class="delete">Delete Feed</Button>
+            </form>
+        </div>    
+    <% }) %>
+
+    <a href="http://localhost:5000/post/new" class="create-post create">Create New Instagram Feed</a>
+    <script src="/js/index.js"></script>
+</body>
+</html>

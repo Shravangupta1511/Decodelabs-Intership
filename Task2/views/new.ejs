@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Instagram Feed</title>
+    <link rel="stylesheet" href="/css/new.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create new Instagram Feed</h1>
+        <form method="POST" action="/post">
+            <label for="username">Enter Username</label>
+            <input type="text" id="username" name="Username" placeholder="Please Enter Username" required>
+
+            <label for="image">Enter Image URL</label>
+            <input type="text" id="image" name="Image" placeholder="Please Enter Image URL" required>
+
+            <label for="caption">Enter Caption</label>
+            <textarea id="caption" name="Caption" placeholder="Please Enter Caption" required></textarea>
+
+            <label for="follower">Enter Followers</label>
+            <input type="number" id="follower" name="Followers" placeholder="Please Enter followers" required>
+
+            <label for="following">Enter Following</label>
+            <input type="number" id="following" name="Following" placeholder="Please Enter followings" required>
+
+            <button type="submit">Create Instagram Feed</button>
+        </form>
+    </div>
+    <script src="/js/new.js"></script>
+</body>
+</html>

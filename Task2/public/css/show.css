@@ -1,0 +1,78 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(124deg,#06b549,#314dd8,#c7df6dc9);
+        padding: 1px;
+        min-height: 100vh;
+    }
+    h1{
+        margin: 20px auto;
+        text-align: center;
+        border-radius: 10px;
+        color:  black;
+        font-size: 45px;
+        background-color: #175fcb;
+        width: 580px;
+        height: 50px;
+        box-shadow: 5px 5px 7px blue;
+        transition: 0.36s;
+    }
+    h1:hover{
+        box-shadow: 5px 5px 7px red;
+    }
+    .feed{
+        width: 700px;
+        margin: 30px auto;
+        background: linear-gradient(150deg, red, blue, darkgreen);
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 0 5px 7px rgb(0, 0, 0);
+        transition: 0.3s;
+    }
+    .feed:hover{
+        transform: translateY(-10px);
+        box-shadow: 10px 8px 7px rgb(66, 98, 48);
+    }
+    .img{
+        width: 670px;
+        height: 420px;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+    .feed h2{
+        margin-bottom: 15px;
+        color:  rgb(45, 251, 255);
+        font-size: 25px;
+    }
+    .feed h3{
+        margin: 15px 0;
+        color: #5ceb59;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 22px;
+    }
+
+    .feed p{
+        margin: 10px 0;
+        color: #59bef4;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .feed a{
+        display: inline-block;
+        text-decoration: none;
+        margin: 15px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        background-color: #0095f6;
+        transition: 0.3s;
+    }
+    .feed a:hover{
+        background-color: #0077cc;
+    }
